@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_add_random"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="@string/title_option_newtask"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_change_layout"
+        android:icon="@drawable/ic_layout_grid"
+        android:title="@string/title_option_layout_grid"
+        app:showAsAction="ifRoom" />
+    <!--<group
+        android:id="@+id/filter_group"
+        android:checkableBehavior="single"
+        android:icon="@drawable/ic_filter"
+        android:title="@string/title_option_filter"
+        app:showAsAction="ifRoom">
+        <item
+            android:id="@+id/action_filter_by_all_days"
+            android:title="@string/title_option_filter_all_days" />
+        <item
+            android:id="@+id/action_filter_by_sun"
+            android:title="@string/title_option_filter_sun" />
+        <item
+            android:id="@+id/action_filter_by_mon"
+            android:title="@string/title_option_filter_mon" />
+        <item
+            android:id="@+id/action_filter_by_tue"
+            android:title="@string/title_option_filter_tue" />
+        <item
+            android:id="@+id/action_filter_by_wed"
+            android:title="@string/title_option_filter_wed" />
+        <item
+            android:id="@+id/action_filter_by_thu"
+            android:title="@string/title_option_filter_thu" />
+        <item
+            android:id="@+id/action_filter_by_fri"
+            android:title="@string/title_option_filter_fri" />
+        <item
+            android:id="@+id/action_filter_by_sat"
+            android:title="@string/title_option_filter_sat" />
+    </group>-->
+</menu>

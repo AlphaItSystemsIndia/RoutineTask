@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTransparent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:visibility="gone" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/title_text_layout"
+            style="@style/MyTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:theme="@style/MyTextInputLayout"
+            app:errorEnabled="false"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|start"
+                android:hint="@string/form_hint_title"
+                android:importantForAutofill="no"
+                android:textAppearance="?textAppearanceHeadline6"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/desc_text_layout"
+            style="@style/MyTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:theme="@style/MyTextInputLayout"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|start"
+                android:hint="@string/form_hint_desc"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:textAppearance="?textAppearanceBody1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:background="#55EEEEEE" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="4dp"
+            android:drawableStart="@drawable/ic_repeat"
+            android:drawablePadding="4dp"
+            android:text="@string/form_label_repeat"
+            android:textAllCaps="false"
+            android:textAppearance="?textAppearanceButton" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/weekday_chip_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            app:singleSelection="false">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/no_repeat_chip"
+                style="@style/WeekDayChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choice_no_repeat"
+                app:checkedIcon="@drawable/ic_chip_checked"
+                app:checkedIconEnabled="true" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/everyday_chip"
+                style="@style/WeekDayChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/choice_everyday"
+                app:checkedIcon="@drawable/ic_chip_checked"
+                app:checkedIconEnabled="true" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/monday_chip"
+                style="@style/WeekDayChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/day_choice_monday"
+                app:checkedIcon="@drawable/ic_chip_checked"
+                app:checkedIconEnabled="true" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/tuesday_chip"
+                style="@style/WeekDayChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/day_choice_tuesday"
+                app:checkedIcon="@drawable/ic_chip_checked"
+                app:checkedIconEnabled="true" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/wednesday_chip"
+                style="@style/WeekDayChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/day_choice_wednesday"
+                app:checkedIcon="@drawable/ic_chip_checked"
+                app:checkedIconEnabled="true" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/thursday_chip"
+                style="@style/WeekDayChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/day_choice_thursday"
+                app:checkedIcon="@drawable/ic_chip_checked"
+                app:checkedIconEnabled="true" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/friday_chip"
+                style="@style/WeekDayChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/day_choice_friday"
+                app:checkedIcon="@drawable/ic_chip_checked"
+                app:checkedIconEnabled="true" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/saturday_chip"
+                style="@style/WeekDayChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/day_choice_saturday"
+                app:checkedIcon="@drawable/ic_chip_checked"
+                app:checkedIconEnabled="true" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/sunday_chip"
+                style="@style/WeekDayChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/day_choice_sunday"
+                app:checkedIcon="@drawable/ic_chip_checked"
+                app:checkedIconEnabled="true" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:background="#55EEEEEE" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add_reminder"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="@string/btn_label_set_reminder"
+            android:textAllCaps="false"
+            app:cornerRadius="28dp"
+            app:icon="@drawable/ic_reminder"
+            app:iconSize="18dp"
+            tools:visibility="gone" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/reminder_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="4dp"
+            tools:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/btn_clear_reminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:contentDescription="@string/btn_clear_description"
+                android:paddingHorizontal="6dp"
+                android:src="@drawable/ic_close"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/label_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_clock"
+                android:drawablePadding="4dp"
+                android:text="@string/form_label_start_time"
+                android:textAppearance="?android:textAppearanceSmall"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/time_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:background="@drawable/ripple_time_box"
+                android:paddingStart="12dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="4dp"
+                android:singleLine="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/label_start_time"
+                app:layout_constraintTop_toBottomOf="@id/label_start_time"
+                tools:text="10:46 AM" />
+
+            <TextView
+                android:id="@+id/label_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_duration_18dp"
+                android:drawablePadding="4dp"
+                android:text="@string/form_label_duration"
+                android:textAppearance="?android:textAppearanceSmall"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/time_text_view" />
+
+            <TextView
+                android:id="@+id/duration_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:background="@drawable/ripple_time_box"
+                android:paddingStart="12dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="4dp"
+                android:singleLine="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/label_duration"
+                app:layout_constraintTop_toBottomOf="@id/label_duration"
+                tools:text="02H 02M 02S" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

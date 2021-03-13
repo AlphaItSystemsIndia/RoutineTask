@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/stats_bottom_nav_task"
+        android:enabled="true"
+        android:icon="@drawable/ic_list_item_48dp"
+        android:title="@string/stats_item_task"/>
+    <item
+        android:id="@+id/stats_bottom_nav_pomodoro"
+        android:enabled="true"
+        android:icon="@drawable/ic_pomodoro"
+        android:title="@string/stats_item_pomodoro"/>
+</menu>

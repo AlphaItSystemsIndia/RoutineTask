@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_whats_today"
+            android:icon="@drawable/ic_today"
+            android:title="@string/drawer_item_today" />
+        <item
+            android:id="@+id/nav_item_routine_tasks"
+            android:icon="@drawable/ic_drawer_list"
+            android:title="@string/drawer_item_routine_tasks" />
+        <item
+            android:id="@+id/nav_item_onetime_tasks"
+            android:icon="@drawable/ic_drawer_list"
+            android:title="@string/drawer_item_onetime_tasks" />
+        <item
+            android:id="@+id/nav_item_pomodoro"
+            android:icon="@drawable/ic_pomodoro"
+            android:title="@string/drawer_item_pomodoro" />
+        <item
+            android:id="@+id/nav_item_my_progress"
+            android:icon="@drawable/ic_stats"
+            android:title="@string/drawer_item_progress" />
+        <item
+            android:id="@+id/nav_item_about"
+            android:icon="@drawable/ic_drawer_about"
+            android:title="@string/drawer_item_about" />
+    </group>
+    <group
+        android:id="@+id/settings_menu"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_item_preferences"
+            android:icon="@drawable/ic_outline_settings"
+            android:title="@string/drawer_item_preferences" />
+    </group>
+    <item android:title="@string/drawer_group_title_help_us">
+        <menu>
+            <item
+                android:id="@+id/nav_item_donate"
+                android:icon="@drawable/ic_donate"
+                android:title="@string/drawer_item_donate" />
+            <item
+                android:id="@+id/nav_item_rate"
+                android:icon="@drawable/ic_drawer_star"
+                android:title="@string/drawer_item_rate" />
+            <item
+                android:id="@+id/nav_item_share"
+                android:icon="@drawable/ic_drawer_share"
+                android:title="@string/drawer_item_share" />
+            <item
+                android:id="@+id/nav_item_feedback"
+                android:icon="@drawable/ic_drawer_feedback"
+                android:title="@string/drawer_item_feedback" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/nav_item_crash"
+        android:icon="@drawable/ic_crash"
+        android:title="Crash App" />
+</menu>

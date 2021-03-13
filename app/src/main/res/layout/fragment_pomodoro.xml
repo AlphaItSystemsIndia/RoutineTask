@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.cod3rboy.routinetask.fragments.PomodoroFragment">
+
+    <com.cod3rboy.routinetask.views.ClockSeekView
+        android:id="@+id/clockseek"
+        android:layout_width="@dimen/pomodoro_size"
+        android:layout_height="@dimen/pomodoro_size"
+        android:layout_margin="@dimen/pomodoro_margin"
+        app:anim_circle_color="@color/animCircleColor"
+        app:anim_circle_end_radius="@dimen/anim_circle_end_radius"
+        app:anim_circle_start_radius="@dimen/anim_circle_start_radius"
+        app:circle_color="@color/circleColor"
+        app:circle_progress_color="@color/circleProgressColor"
+        app:circle_stroke_width="@dimen/circle_stroke_width"
+        app:dial_circle_color="@color/dialCircleColor"
+        app:dial_circle_radius="@dimen/dial_circle_radius"
+        app:lbl_text_color="@color/lblTextColor"
+        app:lbl_text_size="@dimen/lbl_text_size"
+        app:min_text_color="@color/minTextColor"
+        app:min_text_size="@dimen/min_text_size"
+        app:pointer_color="@color/pointerColor"
+        app:pointer_halo_border_width="@dimen/pointer_halo_border_width"
+        app:pointer_halo_color="@color/pointerHaloColor"
+        app:pointer_halo_color_ontouch="@color/pointerHaloTouchColor"
+        app:pointer_halo_width="@dimen/pointer_halo_width"
+        app:pointer_radius="@dimen/pointer_radius"
+        app:ring_color="@color/ringColor"
+        app:ring_lines_color="@color/ringLinesColor"
+        app:ring_lines_stroke_width="@dimen/ring_lines_stroke_width"
+        app:ring_lines_width="@dimen/ring_lines_width"
+        app:ring_radius="@dimen/ring_radius"
+        app:ring_stroke_width="@dimen/ring_stroke_width"
+        app:sec_text_color="@color/secTextColor"
+        app:sec_text_size="@dimen/sec_text_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/button_layout_margin_bottom"
+        android:padding="@dimen/button_layout_padding"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/startBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_drawer_button"
+            android:contentDescription="@string/str_pomodoro_start"
+            android:elevation="2dp"
+            android:padding="@dimen/button_padding"
+            android:src="@drawable/ic_play"
+            tools:visibility="visible"/>
+
+        <ImageButton
+            android:id="@+id/stopBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_drawer_button"
+            android:contentDescription="@string/str_pomodoro_stop"
+            android:elevation="2dp"
+            android:visibility="gone"
+            android:padding="@dimen/button_padding"
+            android:src="@drawable/ic_stop"
+            tools:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_no_volume" />
+
+            <com.warkiz.widget.IndicatorSeekBar
+                android:id="@+id/volAdjustView"
+                android:layout_width="@dimen/vol_indicator_width"
+                android:layout_height="wrap_content"
+                app:isb_indicator_color="@color/indicator_color"
+                app:isb_indicator_text_color="@color/indicator_text_color"
+                app:isb_max="100"
+                app:isb_min="0"
+                app:isb_show_indicator="circular_bubble"
+                app:isb_thumb_color="#66CCFF"
+                app:isb_thumb_size="@dimen/vol_thumb_size"
+                app:isb_track_background_color="@color/track_bg_color"
+                app:isb_track_progress_color="@color/track_progress_color" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_high_volume" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vol_text_margin_bottom"
+            android:text="@string/volume_text"
+            android:theme="@style/PomodoroHeading" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/what_is_pomodoro_layout_padding">
+
+        <ImageView
+            android:id="@+id/iconInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_info"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/what_is_pomodoro"
+            android:theme="@style/PomodoroHeading"
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iconInfo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pomodoroLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pomodoro_link_text"
+            android:theme="@style/PomodoroLink"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

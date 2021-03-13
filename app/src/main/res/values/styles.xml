@@ -1,0 +1,119 @@
+<resources xmlns:ns2="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--  It should be true otherwise action mode will not overlay toolbar -->
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/colorPrimary</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <item name="android:textColor">#dddddd</item>
+        <item name="materialAlertDialogTheme">@style/MaterialAlertDialog</item>
+        <item name="alertDialogTheme">@style/MaterialAlertDialog</item>
+    </style>
+
+    <!--Splash Activity Theme-->
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+    </style>
+
+
+    <!--Theme for the walkthrough activity-->
+    <style name="WalkThroughTheme" parent="Theme.MaterialComponents.NoActionBar" />
+
+    <!--Style for Weekdays Tag textview in list item-->
+    <style name="WeekdayTag">
+        <item name="android:textSize">@dimen/tag_text_size</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:paddingEnd">5dp</item>
+        <item name="android:background">@drawable/bg_round_day</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <!-- Style for the Pomodoro Text -->
+    <style name="PomodoroHeading">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="PomodoroDesc">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="PomodoroLink" parent="PomodoroHeading">
+        <item name="android:background">@drawable/bg_round_day</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <!--Char Button Style-->
+    <style name="ChartButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTintMode">src_atop</item>
+        <item name="android:background">@drawable/ripple_chart_btn</item>
+    </style>
+    <!--End Char Button Style-->
+
+    <!--TextInputLayout Style-->
+    <style name="MyTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/colorTransparent</item>
+        <item name="background">@color/colorTransparent</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="colorPrimary">@color/white</item>
+    </style>
+    <!--End TextInputLayout Style-->
+
+    <!--Navigation view style-->
+    <style name="AppNavStyle" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="itemIconTint">@color/drawer_item</item>
+        <item name="itemTextColor">@color/drawer_item</item>
+        <item name="itemBackground">@drawable/ripple_drawer_item</item>
+        <item name="itemHorizontalPadding">24dp</item>
+        <item name="itemIconPadding">24dp</item>
+    </style>
+    <!--End Navigation view style-->
+
+    <!--Weekday Chip Style-->
+    <style name="WeekDayChip" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:textColor">@color/chip_text_color</item>
+        <item name="chipStrokeColor">@color/chip_stoke_color</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipSurfaceColor">@color/chip_surface_color</item>
+        <item name="rippleColor">@color/chip_ripple_color</item>
+    </style>
+    <!--End Weekday Chip Style-->
+
+    <!-- Material Alert Dialog Theme-->
+    <style name="MaterialAlertDialog" parent="Theme.MaterialComponents.Dialog.Alert">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--End Material Alert Dialog Theme-->
+
+    <style name="AppRateDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="colorPrimary">@color/black</item>
+    </style>
+
+    <!--BottomSheetDialog Theme-->
+    <style name="CBSTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="colorSecondary">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--Crash Bottom Sheet Drawable Style-->
+    <style name="CBSDrawable">
+        <item name="android:src">@mipmap/ic_launcher_round</item>
+    </style>
+</resources>

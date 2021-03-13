@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/color_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ripple_color_item"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_margin="4dp"
+    android:padding="4dp">
+
+    <com.mikhaellopez.circleview.CircleView
+        android:id="@+id/color_circle"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        app:cv_border="true"
+        app:cv_border_color="@color/white"
+        app:cv_border_width="4dp"
+        app:cv_color="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

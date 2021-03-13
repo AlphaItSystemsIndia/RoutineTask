@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--List item selector colors-->
+    <color name="colorItemSelected">#000000</color>
+    <color name="colorPrimary">#202124</color>
+    <color name="colorAccent">#3399CC</color>
+
+    <!--FancuWalkThrough colors-->
+    <color name="colorTitle">#003DA4</color>
+    <color name="colorDesc">#000</color>
+    <color name="colorCardBackground">#FFFFFF</color>
+    <color name="colorBackground">#003DA4</color>
+    <color name="indicatorColorActive">#DBC200</color>
+    <color name="indicatorColorInactive">#003DA4</color>
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorTransparent">#00000000</color>
+
+    <!--Colors used in the ClockSeekView-->
+    <color name="circleColor">#3366CCFF</color>
+    <color name="pointerColor">#FF66CCFF</color>
+    <color name="pointerHaloColor">#6666CCFF</color>
+    <color name="pointerHaloTouchColor">#9966CCFF</color>
+    <color name="circleProgressColor">#AA66CCFF</color>
+    <!--    <color name="dialCircleColor">#FFDDDDDD</color>-->
+    <color name="dialCircleColor">#66CCFF</color>
+    <!--<color name="animCircleColor">#FFEEEEEE</color>-->
+    <color name="animCircleColor">#55FFFFFF</color>
+    <color name="ringColor">#FF66CCFF</color>
+    <color name="ringLinesColor">#6666CCFF</color>
+    <color name="minTextColor">#FFFFFFFF</color>
+    <color name="secTextColor">#FFFFFFFF</color>
+    <color name="lblTextColor">#FFFFFFFF</color>
+
+    <!--Volumne Indicator Colors-->
+    <color name="indicator_color">@color/colorAccent</color>
+    <color name="indicator_text_color">#FFFFFF</color>
+    <color name="thumb_color">@color/colorAccent</color>
+    <color name="track_bg_color">#FFFFFF</color>
+    <color name="track_progress_color">@color/colorAccent</color>
+
+    <!--Horizontal bar chart colors-->
+    <color name="color_chart_bar_normal">@color/colorAccent</color>
+    <color name="color_chart_bar_pressed">@color/black</color>
+    <color name="color_chart_axis_label">@color/white</color>
+    <!--End Horizontal bar chart colors-->
+
+    <!--Today Tasks Widget Colors-->
+    <color name="color_widget_header_bg">#444444</color>
+    <color name="color_widget_header_sep_bg">#666666</color>
+    <color name="color_widget_body_bg">#202124</color>
+    <color name="color_widget_text_primary">#FFFFFF</color>
+    <color name="color_widget_text_secondary">#AAAAAA</color>
+    <!--End Today Tasks Widget Colors-->
+</resources>

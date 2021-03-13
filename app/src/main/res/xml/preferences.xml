@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--Sort Completed Tasks Preference-->
+    <SwitchPreferenceCompat
+        app:defaultValue="@string/settings_sort_task_default_value"
+        app:key="@string/settings_sort_task_key"
+        app:summary="@string/settings_sort_task_summary"
+        app:title="@string/settings_sort_task_title" />
+    <!--Task Complete Sound Preference-->
+    <SwitchPreferenceCompat
+        app:defaultValue="@string/settings_sound_task_complete_default_value"
+        app:key="@string/settings_sound_task_complete_key"
+        app:summary="@string/settings_sound_task_complete_summary"
+        app:title="@string/settings_sound_task_complete_title" />
+    <PreferenceCategory app:title="@string/settings_category_weekday_time">
+        <!--First day of week Preference-->
+        <ListPreference
+            app:defaultValue="@string/settings_first_weekday_value_monday"
+            app:dialogTitle="@string/settings_first_weekday_dialog_title"
+            app:entries="@array/array_weekday_start_entries"
+            app:entryValues="@array/array_weekday_start_values"
+            app:key="@string/settings_first_weekday_key"
+            app:title="@string/settings_first_weekday_title"
+            app:useSimpleSummaryProvider="true" />
+        <!--Time Format Preference-->
+        <ListPreference
+            app:defaultValue="@string/settings_time_format_value_12"
+            app:dialogTitle="@string/settings_time_format_dialog_title"
+            app:entries="@array/array_time_format_entries"
+            app:entryValues="@array/array_time_format_values"
+            app:key="@string/settings_time_format_key"
+            app:title="@string/settings_time_format_title"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="@string/settings_category_notifications">
+        <!--Notification Alarm-->
+        <SwitchPreferenceCompat
+            app:defaultValue="@string/settings_notification_alarm_default_value"
+            app:key="@string/settings_notification_alarm_key"
+            app:summary="@string/settings_notification_alarm_summary"
+            app:title="@string/settings_notification_alarm_title" />
+        <!--Task Timer Alarm Preference-->
+        <SwitchPreferenceCompat
+            app:defaultValue="@string/settings_duration_alarm_default_value"
+            app:key="@string/settings_duration_alarm_key"
+            app:summary="@string/settings_duration_alarm_summary"
+            app:title="@string/settings_duration_alarm_title" />
+    </PreferenceCategory>
+</PreferenceScreen>

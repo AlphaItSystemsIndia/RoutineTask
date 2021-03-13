@@ -1,0 +1,129 @@
+body {
+    font-family: Roboto, sans-serif;
+    color:white;
+    background-color: #202124;
+}
+.social-links{
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+}
+.social-links a.social-icon-link{
+    display: inline-block;
+    width: 10%;
+    height: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+a.floating-btn{
+    display: inline-block;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: 0.8em;
+    margin-bottom: 1em;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    background: #3399CC;
+    color: #ffffff;
+    border-radius: 100em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20pt;
+    font-weight: bold;
+}
+a.floating-btn:link{
+    color: #FFFFFF;
+}
+a.floating-btn:visited{
+    color: #FFFFFF;
+}
+
+.app-showcase {
+    background-color: #333333;
+    padding: 1em;
+    text-align: center;
+}
+
+.app-showcase > .app-icon {
+    display: inline-block;
+    width: 20%;
+}
+.app-showcase > .app-name{
+    font-size: 20pt;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    margin-top: .5em;
+}
+.app-showcase > .app-version{
+    font-size: 10pt;
+    letter-spacing: 0.1em;
+    color: #EEEEEE;
+}
+.app-showcase > .app-desc{
+    display: inline-block;
+    color: #EEEEEE;
+    width: 80%;
+    font-size: 12pt;
+    text-align: center;
+    margin-top: 1em;
+}
+
+a.nav-item{
+    display: block;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #333333;
+    margin-top: 0.5em;
+    padding: .5em;
+    font-size: 14pt;
+    border-radius: 10em;
+}
+a.nav-item:link{
+    color: #FFFFFF;
+}
+a.nav-item:visited{
+    color: #FFFFFF;
+}
+a.nav-item:hover{
+    text-decoration: none;
+    background-color: #3399CC;
+    color: #FFFFFF;
+}
+
+div.content{
+    margin-top: 2em;
+    margin-left: 2%;
+    margin-right: 2%;
+    border: 1px solid #CCCCCC;
+}
+div.content > .content-title{
+    padding: 1em;
+    font-weight: bold;
+    color: #000000;
+    background-color: #EEEEEE;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+div.content > .content-desc{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+a:link{
+    color: #3399CC;
+}
+a:visited{
+    color: #3399CC;
+}
+a:hover{
+    text-decoration: none;
+}
+a:active{
+    color: rgb(31, 91, 121);
+}

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/task_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@drawable/ripple_task_item"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:id="@+id/first_child"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/item_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="@string/list_icon_desc"
+            android:src="@drawable/ic_flag" />
+
+        <TextView
+            android:id="@+id/text_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/text_view_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="14sp"
+            tools:text="This is a description of the text of the above title. This is another line to make description long enough." />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingVertical="12dp">
+
+            <TextView
+                android:id="@+id/text_view_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_round_time"
+                android:drawableStart="@drawable/ic_access_time_black_24dp"
+                android:drawablePadding="3dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textSize="@dimen/tag_text_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/no_reminder" />
+
+            <TextView
+                android:id="@+id/text_view_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/bg_round_time"
+                android:drawableStart="@drawable/ic_duration"
+                android:drawablePadding="2dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textSize="@dimen/tag_text_size"
+                app:layout_constraintStart_toEndOf="@id/text_view_time"
+                app:layout_constraintTop_toTopOf="@id/text_view_time"
+                tools:text="2h 3m" />
+
+            <com.google.android.flexbox.FlexboxLayout
+                android:id="@+id/day_tag_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                app:flexDirection="row"
+                app:flexWrap="wrap"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_time">
+
+                <TextView
+                    android:id="@+id/tag_no_repeat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/tag_one_time"
+                    android:textAllCaps="true"
+                    android:theme="@style/WeekdayTag"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tag_mon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/tag_monday"
+                    android:theme="@style/WeekdayTag"
+                    app:layout_order="2" />
+
+                <TextView
+                    android:id="@+id/tag_tue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/tag_tuesday"
+                    android:theme="@style/WeekdayTag"
+                    app:layout_order="2" />
+
+                <TextView
+                    android:id="@+id/tag_wed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/tag_wednesday"
+                    android:theme="@style/WeekdayTag"
+                    app:layout_order="2" />
+
+                <TextView
+                    android:id="@+id/tag_thu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/tag_thursday"
+                    android:theme="@style/WeekdayTag"
+                    app:layout_order="2" />
+
+                <TextView
+                    android:id="@+id/tag_fri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/tag_friday"
+                    android:theme="@style/WeekdayTag"
+                    app:layout_order="2" />
+
+                <TextView
+                    android:id="@+id/tag_sat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/tag_saturday"
+                    android:theme="@style/WeekdayTag"
+                    app:layout_order="2" />
+
+                <TextView
+                    android:id="@+id/tag_sun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/tag_sunday"
+                    android:theme="@style/WeekdayTag"
+                    app:layout_order="2" />
+            </com.google.android.flexbox.FlexboxLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

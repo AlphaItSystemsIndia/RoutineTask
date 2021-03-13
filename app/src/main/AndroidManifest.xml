@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cod3rboy.routinetask">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        tools:node="remove" />
+
+    <application
+        android:name=".TaskApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".activities.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/title_activity_preferences"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".activities.BatteryOptimizeActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".activities.AddTaskActivity"
+            android:label="@string/title_activity_newtask"
+            android:theme="@style/SplashTheme" />
+        <activity
+            android:name=".activities.EditTaskActivity"
+            android:label="@string/title_activity_edittask"
+            android:theme="@style/SplashTheme" />
+
+        <receiver android:name=".receivers.AutoStartReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receivers.StatisticsReceiver" />
+        <receiver android:name=".receivers.PomodoroKillReceiver" />
+        <receiver android:name=".receivers.TaskTimerReceiver" />
+        <receiver
+            android:name=".receivers.TaskBroadcastReceiver"
+            android:process=":remote" />
+        <receiver android:name=".receivers.NotificationDismissReceiver" />
+        <receiver android:name=".receivers.TodayTaskWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.cod3rboy.routinetask.action.WIDGET_UPDATE" />
+                <action android:name="com.cod3rboy.routinetask.action.SCHEDULED_WIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_today_task_info" />
+        </receiver>
+        <receiver
+            android:name=".receivers.WidgetActionReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.cod3rboy.routinetask.action.WIDGET_ACTION" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".services.PomodoroService"
+            android:exported="false" />
+        <service
+            android:name=".services.TaskTimerService"
+            android:exported="false" />
+        <service
+            android:name=".services.NotificationAlarmService"
+            android:exported="false" />
+        <service
+            android:name=".services.TodayTaskWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+    </application>
+
+</manifest>

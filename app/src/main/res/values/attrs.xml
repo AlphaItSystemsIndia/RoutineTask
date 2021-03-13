@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircularSeekBar">
+        <attr name="progress" format="integer"/>
+        <attr name="max" format="integer"/>
+        <attr name="move_outside_circle" format="boolean"/>
+        <attr name="maintain_equal_circle" format="boolean"/>
+        <attr name="use_custom_radii" format="boolean"/>
+        <attr name="lock_enabled" format="boolean"/>
+        <attr name="circle_x_radius" format="dimension" />
+        <attr name="circle_y_radius" format="dimension" />
+        <attr name="circle_stroke_width" format="dimension" />
+        <attr name="pointer_radius" format="dimension" />
+        <attr name="pointer_halo_width" format="dimension" />
+        <attr name="pointer_halo_border_width" format="dimension"/>
+        <attr name="circle_color" format="color"/>
+        <attr name="circle_progress_color" format="color"/>
+        <attr name="pointer_color" format="color"/>
+        <attr name="pointer_halo_color" format="color"/>
+        <attr name="pointer_halo_color_ontouch" format="color"/>
+        <attr name="pointer_alpha_ontouch" format="integer"/>
+        <attr name="start_angle" format="float"/>
+        <attr name="end_angle" format="float"/>
+        <attr name="circle_fill" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="ClockSeekView" parent="CircularSeekBar">
+        <!--Dimension related attributes-->
+        <attr name="dial_circle_radius" format="dimension" />
+        <attr name="anim_circle_start_radius" format="dimension" />
+        <attr name="anim_circle_end_radius" format="dimension" />
+        <attr name="ring_radius" format="dimension" />
+        <attr name="ring_stroke_width" format="dimension"/>
+        <attr name="ring_lines_width" format="dimension" />
+        <attr name="ring_lines_stroke_width" format="dimension"/>
+        <attr name="min_text_size" format="dimension" />
+        <attr name="sec_text_size" format="dimension" />
+        <attr name="lbl_text_size" format="dimension" />
+        <!--Color related attributes-->
+        <attr name="ring_color" format="color" />
+        <attr name="ring_lines_color" format="color" />
+        <attr name="dial_circle_color" format="color" />
+        <attr name="anim_circle_color" format="color" />
+        <attr name="min_text_color" format="color" />
+        <attr name="sec_text_color" format="color" />
+        <attr name="lbl_text_color" format="color" />
+    </declare-styleable>
+
+
+</resources>

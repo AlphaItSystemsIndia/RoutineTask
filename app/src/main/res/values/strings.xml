@@ -1,0 +1,399 @@
+<resources>
+    <string name="app_name">Routine Task</string>
+    <string name="app_slogan">Achieve your daily goals</string>
+
+    <!--Activities Labels-->
+    <string name="title_activity_main">@string/app_name</string>
+    <string name="title_activity_newtask">Create Task</string>
+    <string name="title_activity_edittask">Edit Task</string>
+    <string name="title_activity_preferences">@string/drawer_item_preferences</string>
+    <string name="title_activity_settings">Battery Optimization</string>
+    <!--End Activities Labels-->
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--App share Text-->
+    <string name="app_share_text">
+        _Hi, &#128515; i am using a great App called *Routine Task*. I was being unable to follow my daily routine tasks &#128532; and always got distracted &#128565; and forgot the task i am supposed to do &#128553;. I am using *Routine Task* App for a couple of time &#128524; and now i never forget a single task of my routine &#128521; ._
+        \n\nIt is a great app to build daily habits. I suggest you to give it a shot &#128519;&#128076; \nand it\'s less than *10 MB* &#128563; .\n\n&#128073; *Download Now* : https://play.google.com/store/apps/details?id=com.cod3rboy.timetable
+    </string>
+
+
+    <!--Context Action Bar Strings-->
+    <string name="cab_title">Select Tasks</string>
+    <string name="cab_single_select">%d Task Selected</string>
+    <string name="cab_multiple_select">%d Tasks Selected</string>
+    <!--End Context Action Bar Strings-->
+
+    <!--Shared preferences keys for Tutorials-->
+    <string name="pref_tutorial_fab_drawer">tutorial_fab_drawer</string>
+    <string name="pref_tutorial_add_task">tutorial_add_task</string>
+    <string name="pref_tutorial_delete_task">tutorial_del_task</string>
+    <string name="pref_tutorial_edit_task">tutorial_edit_task</string>
+    <string name="pref_tutorial_form_task">tutorial_form_task</string>
+    <string name="pref_tutorial_reminder_task">tutorial_reminder_task</string>
+    <string name="pref_tutorial_pomodoro">tutorial_pomodoro</string>
+    <string name="pref_tutorial_today_item">tutorial_today_item</string>
+    <string name="pref_tutorial_routine_item">tutorial_routine_item</string>
+    <string name="pref_tutorial_onetime_item">tutorial_onetime_item</string>
+    <string name="pref_battery_optimisation">tutorial_battery_optimisation</string>
+    <!--End Shared preferences keys for Tutorials-->
+
+    <!--App Shared Preferences keys-->
+    <string name="pref_whats_today_layout_type">whats_today_layout_type</string>
+    <string name="pref_routine_tasks_layout_type">routine_tasks_layout_type</string>
+    <string name="pref_one_time_tasks_layout_type">one_time_tasks_layout_type</string>
+    <!--End App Shared Preferences keys-->
+
+    <!--Tutorial Strings-->
+    <string name="tutorial_drawer_title">App Menu</string>
+    <string name="tutorial_drawer_desc">Tap on this icon to display app menu</string>
+
+    <string name="tutorial_save_title">Save Changes</string>
+    <string name="tutorial_save_desc">Tap it to save all changes made to the task</string>
+    <string name="tutorial_delete_title">Delete Task</string>
+    <string name="tutorial_delete_desc">Tap it to delete this task</string>
+
+    <string name="tutorial_new_title">Create new task</string>
+    <string name="tutorial_new_desc">Tap it to create a new routine task or one-time task</string>
+
+    <string name="tutorial_create_title">Save</string>
+    <string name="tutorial_create_desc">Tap it to save new task</string>
+
+    <string name="tutorial_pomodoro_title">Start Pomodoro</string>
+    <string name="tutorial_pomodoro_desc">Set the timer and tap on play button</string>
+
+    <string name="tutorial_color_title">Background Color</string>
+    <string name="tutorial_color_desc">Tap to choose a background color for the task</string>
+
+    <string name="tutorial_reminder_title">Task Reminder</string>
+    <string name="tutorial_reminder_desc">Tap to set a reminder for the task</string>
+
+    <string name="tutorial_start_time_title">Start Time</string>
+    <string name="tutorial_start_time_desc">Tap to set start time for the task</string>
+
+    <string name="tutorial_duration_title">Duration</string>
+    <string name="tutorial_duration_desc">Tap to set duration for the task</string>
+
+    <string name="tutorial_remove_reminder_title">Remove Reminder</string>
+    <string name="tutorial_remove_reminder_desc">Tap this to remove reminder for the task</string>
+
+    <string name="tutorial_weekday_title">Repeat for Days</string>
+    <string name="tutorial_weekday_desc">Tap No Repeat to create one-time tasks or choose any weekdays to create routine tasks</string>
+
+    <string name="tutorial_today_item_title">Today\'s Routine</string>
+    <string name="tutorial_today_item_desc">List of routine tasks to complete today. Tap any task to edit or long tap to start selection</string>
+
+    <string name="tutorial_routine_item_title">Routine Tasks</string>
+    <string name="tutorial_routine_item_desc">List of all created routine tasks. Tap any task to edit or long tap to start selection</string>
+
+    <string name="tutorial_onetime_item_title">One-Time Tasks</string>
+    <string name="tutorial_onetime_item_desc">List of all created one-time tasks. Tap any task to edit or long tap to start selection</string>
+    <!--End Tutorial Strings-->
+
+
+    <!--Options Menu title and tooltip Strings-->
+    <string name="title_option_newtask">New Task</string>
+    <string name="tooltip_option_newtask">Create a new routine task</string>
+    <string name="title_option_create_newtask">Save</string>
+    <string name="tooltip_option_create_newtask">Save new routine task</string>
+    <string name="title_option_edittask">Edit Selected Task</string>
+    <string name="tooltip_option_edittask">Change or update selected routine task</string>
+    <string name="title_option_deletetask">Delete</string>
+    <string name="tooltip_option_deletetask">Delete routine task</string>
+    <string name="title_option_select_all">Select All</string>
+    <string name="tooltip_option_select_all">Select All Tasks</string>
+    <string name="title_option_savetask">Save Changes</string>
+    <string name="tooltip_option_savetask">Save changes made to this routine task</string>
+    <string name="title_option_random_stats_task">Random Tasks Stats</string>
+    <string name="tooltip_option_random_stats_task">Generate random statistics data for tasks</string>
+    <string name="title_option_reset_stats_tasks">Reset Data</string>
+    <string name="tooltip_option_stats_reset_task">Reset tasks statistics data</string>
+    <string name="title_option_random_stats_pomodoro">Random Pomodoro Stats</string>
+    <string name="tooltip_option_random_stats_pomodoro">Generate random statistics data for pomodoro</string>
+    <string name="title_option_reset_stats_pomodoro">Reset Data</string>
+    <string name="tooltip_option_stats_reset_pomodoro">Reset pomodoro statistics data</string>
+    <string name="title_option_duplicate">Make duplicate</string>
+    <string name="title_option_layout_list">View List</string>
+    <string name="title_option_layout_grid">View Grid</string>
+    <string name="title_option_filter">Filter List</string>
+    <string name="title_option_filter_all_days">All Days</string>
+    <string name="title_option_filter_sun">Sunday</string>
+    <string name="title_option_filter_mon">Monday</string>
+    <string name="title_option_filter_tue">Tuesday</string>
+    <string name="title_option_filter_wed">Wednesday</string>
+    <string name="title_option_filter_thu">Thursday</string>
+    <string name="title_option_filter_fri">Friday</string>
+    <string name="title_option_filter_sat">Saturday</string>
+    <!-- End of Options Menu title and tooltip strings-->
+
+    <!--App Drawer Items Strings-->
+    <string name="drawer_header_icon_desc">Routine task app icon</string>
+    <string name="drawer_item_today">What\'s Today</string>
+    <string name="drawer_item_routine_tasks">Routine Tasks</string>
+    <string name="drawer_item_onetime_tasks">One-Time Tasks</string>
+    <string name="drawer_item_pomodoro">Pomodoro</string>
+    <string name="drawer_item_progress">My Progress</string>
+    <string name="drawer_item_about">About</string>
+    <string name="drawer_item_preferences">Preferences</string>
+    <string name="drawer_group_title_help_us">Help us improve</string>
+    <string name="drawer_item_share">Share</string>
+    <string name="drawer_item_rate">Rate and Review</string>
+    <string name="drawer_item_feedback">Feedback</string>
+    <string name="drawer_item_donate">Donate</string>
+    <!--End App Drawer Items Strings-->
+
+    <!--Preference Settings Strings -->
+    <string name="settings_category_notifications">Task Notifications</string>
+    <string name="settings_category_weekday_time">Weekday and Time</string>
+
+    <string name="settings_time_format_title">Time Format</string>
+    <string name="settings_time_format_key">key_setting_time_format</string>
+    <string name="settings_time_format_dialog_title">Choose time format</string>
+    <string name="settings_time_format_entry_12">12-hour</string>
+    <string name="settings_time_format_entry_24">24-hour</string>
+    <string name="settings_time_format_value_12">12</string>
+    <string name="settings_time_format_value_24">24</string>
+
+    <string name="settings_first_weekday_title">First day of week</string>
+    <string name="settings_first_weekday_key">key_setting_first_weekday</string>
+    <string name="settings_first_weekday_dialog_title">Choose first day of week</string>
+    <string name="settings_first_weekday_entry_sunday">Sunday</string>
+    <string name="settings_first_weekday_entry_monday">Monday</string>
+    <string name="settings_first_weekday_value_sunday">1</string>
+    <string name="settings_first_weekday_value_monday">2</string>
+
+    <string name="settings_sort_task_title">Sort completed tasks</string>
+    <string name="settings_sort_task_key">key_setting_sort_task</string>
+    <string name="settings_sort_task_summary">Always display completed tasks at the bottom of task list</string>
+    <string name="settings_sort_task_default_value">true</string>
+
+    <string name="settings_sound_task_complete_title">Task complete sound</string>
+    <string name="settings_sound_task_complete_key">key_setting_sound_task_complete</string>
+    <string name="settings_sound_task_complete_summary">Play a sound on task complete</string>
+    <string name="settings_sound_task_complete_default_value">true</string>
+
+    <string name="settings_notification_alarm_title">Task notifications alarm</string>
+    <string name="settings_notification_alarm_key">key_setting_notification_alarm</string>
+    <string name="settings_notification_alarm_summary">Play alarm sound on task notifications</string>
+    <string name="settings_notification_alarm_default_value">false</string>
+
+    <string name="settings_duration_alarm_title">Task duration alarm</string>
+    <string name="settings_duration_alarm_key">key_setting_timer_alarm</string>
+    <string name="settings_duration_alarm_summary">Play alarm sound when task duration is completed</string>
+    <string name="settings_duration_alarm_default_value">true</string>
+    <!--End Preference Settings Strings -->
+
+    <!--Donation Strings-->
+    <string name="donation_dialog_title">Donation</string>
+    <string name="donation_dialog_message">
+        😀 Thank you for considering a donation! Your support 🙏 will help Routine Task to survive in the ocean of playstore apps
+        and it will also encourage the developer 💪 to keep this app ads free 🚫 and add more features to it. For donation, you just need
+        to purchase a donation thanking app ❤ by tapping donate button.
+    </string>
+    <string name="donation_dialog_positive_btn">Donate</string>
+    <string name="donation_dialog_neutral_btn">Hurt this app</string>
+    <string name="donation_app_id">com.cod3rboy.timetabledonate</string>
+    <!--End Donation Strings-->
+
+    <!--Task Form UI Strings-->
+    <string name="form_label_taskname">Task Title</string>
+    <string name="form_label_taskdesc">Task Description</string>
+    <string name="form_label_tasktime">Set Task Time</string>
+    <string name="form_label_weekday">Weekdays</string>
+    <string name="form_label_repeat">Repeat</string>
+    <string name="form_label_start_time">Start Time</string>
+    <string name="form_label_duration">Duration</string>
+    <string name="form_item_sunday">S</string>
+    <string name="form_item_monday">M</string>
+    <string name="form_item_tuesday">T</string>
+    <string name="form_item_wednesday">W</string>
+    <string name="form_item_thursday">T</string>
+    <string name="form_item_friday">F</string>
+    <string name="form_item_saturday">S</string>
+    <string name="choice_no_repeat">No Repeat</string>
+    <string name="choice_everyday">Everyday</string>
+    <string name="day_choice_sunday">Sunday</string>
+    <string name="day_choice_monday">Monday</string>
+    <string name="day_choice_tuesday">Tuesday</string>
+    <string name="day_choice_wednesday">Wednesday</string>
+    <string name="day_choice_thursday">Thursday</string>
+    <string name="day_choice_friday">Friday</string>
+    <string name="day_choice_saturday">Saturday</string>
+    <string name="form_hint_title">Title</string>
+    <string name="form_hint_desc">Description</string>
+    <string name="form_label_create">Create</string>
+    <string name="max_chars">(limit %d/%d)</string>
+    <string name="form_title_error">Title cannot be empty</string>
+    <string name="btn_label_set_reminder">Set Reminder</string>
+    <string name="btn_clear_description">Clear Reminder</string>
+    <string name="label_no_duration">Not Set</string>
+    <!-- End Task Form UI Strings-->
+
+    <!--Task List Item Strings-->
+    <string name="no_task_text">No Task No Worries</string>
+    <string name="list_icon_desc">Task icon</string>
+    <string name="no_reminder">No Reminder</string>
+    <string name="tag_one_time">One-Time</string>
+    <string name="tag_sunday">SUN</string>
+    <string name="tag_monday">MON</string>
+    <string name="tag_tuesday">TUE</string>
+    <string name="tag_wednesday">WED</string>
+    <string name="tag_thursday">THU</string>
+    <string name="tag_friday">FRI</string>
+    <string name="tag_saturday">SAT</string>
+    <string name="task_completed">Completed</string>
+    <string name="task_not_completed">Not Completed</string>
+    <!--End Task List Item Strings-->
+
+    <!--Task Notification Strings-->
+    <string name="notification_channel_name">Routine Task Notifications</string>
+    <string name="notification_channel_desc">It notifies you when it\'s time for your routine task.</string>
+    <string name="notification_action_task_complete">MARK AS COMPLETE</string>
+    <string name="notification_action_start_task">START TASK</string>
+    <string name="notification_action_dismiss">DISMISS</string>
+    <string name="notification_action_cancel">CANCEL</string>
+    <string name="notification_task_timer_content">Task Time : %s left</string>
+    <string name="notification_task_timer_time_up">Task Time : Time\'s up</string>
+    <!--End Task Notification Strings-->
+
+    <!--FlashBar messages Strings-->
+    <string name="activity_edit_error">cannot start edit task activity without task</string>
+    <string name="flash_task_deleted">%d Task%s Deleted</string>
+    <string name="flash_task_updated">Task Updated</string>
+    <string name="flash_task_created">Task Created</string>
+    <string name="flash_swipe_dismiss">Swipe to dismiss immediately.</string>
+    <!--End FlashBar messages Strings-->
+
+    <!--Rating BottomSheet Strings-->
+    <string name="str_rate_us">Rate Us</string>
+    <string name="str_rate_desc">Tell others what you think about this app</string>
+    <string name="str_rate_ok">Continue</string>
+    <string name="str_rate_cancel">Close</string>
+    <string name="str_rate_later">Ask me later</string>
+    <string name="str_rate_never">Never ask again</string>
+    <string name="str_rate_msg">Thanks for the feedback.</string>
+
+    <string name="rate_popup_ask_title">Like this App?</string>
+    <string name="rate_popup_ask_message">Do you like Routine Task?</string>
+    <string name="rate_popup_ask_ok">Yes I do</string>
+    <string name="rate_popup_ask_no">Not really</string>
+
+    <string name="rate_popup_title">Rate this app</string>
+    <string name="rate_popup_message">Would you mind taking a moment to rate it?\nIt keeps us motivated and it won\'t take more than a minute. Thanks for your support!</string>
+    <string name="rate_popup_ok">Rate it now</string>
+    <string name="rate_popup_later">Remind me later</string>
+    <string name="rate_popup_no">No, thanks</string>
+    <!--End Rating BottomSheet Strings-->
+
+    <!--WalkThrough Activity Strings-->
+    <string name="key_walk_through">walk_through</string>
+    <string name="goals_title">Goals</string>
+    <string name="goals_desc">Set and accomplish your daily goals</string>
+    <string name="distract_title">No Distractions</string>
+    <string name="distract_desc">Timely notifications help avoid distractions</string>
+    <string name="grow_title">Grow your habits</string>
+    <string name="grow_desc">Helps you to grow and maintain your daily habits</string>
+    <string name="ads_title">No Ads</string>
+    <string name="ads_desc">We know you don\'t like ads and neither us</string>
+    <!--End WalkThrough Activity Strings-->
+
+    <!--BatteryOptimization Activity Strings-->
+    <string name="text_getting_started">Few things before getting started -\n1. Go to App info settings and set Battery optimisation for this app to Not Optimised.
+        \n2. You should also whitelist this app in any other background restrictions options present in your mobile.
+        \n\nThis will help our app to deliver timely task notifications without any delay.</string>
+    <string name="text_subtitle">Battery optimisation and Background restrictions</string>
+    <string name="text_image_desc">Set App Info Setting Battery Optimization to Not Optimised</string>
+    <string name="text_btn_confirm">CONFIRM</string>
+    <!--End BatteryOptimization Activity Strings-->
+
+    <!--Pomodoro Strings-->
+    <string name="what_is_pomodoro">What is Pomodoro ?</string>
+    <string name="pomodoro_link">http://en.wikipedia.org/wiki/Pomodoro_Technique</string>
+    <string name="pomodoro_link_text">Wikipedia</string>
+    <string name="volume_text">Adjust Pomodoro Volume</string>
+    <string name="pomodoro_channel_name">Pomodoro Notification</string>
+    <string name="pomodoro_channel_desc">It shows you the currently running pomodoro</string>
+    <string name="pomodoro_action_stop">STOP</string>
+    <string name="str_pomodoro_running">Pomodoro is running</string>
+    <string name="str_pomodoro_timeout">Pomodoro Timeout</string>
+    <string name="str_pomodoro_timeout_desc">Tap on Stop to finish the Pomodoro</string>
+    <string name="str_pomodoro_cancel">Pomodoro Stopped</string>
+    <string name="str_pomodoro_cancel_desc">Cancelling Pomodoro &#8230;</string>
+    <string name="str_pomodoro_start">Start Pomodoro</string>
+    <string name="str_pomodoro_stop">Stop Pomodoro</string>
+    <!--End Pomodoro Strings-->
+
+    <!--Stats Items Strings-->
+    <string name="stats_item_task">Tasks</string>
+    <string name="stats_item_pomodoro">Pomodoro</string>
+    <string name="stats_no_task_data">Complete some tasks to see progress</string>
+    <string name="stats_no_pomodoro_data">You have never run pomodoro</string>
+    <string name="stats_delete_task_info_msg">Deleted tasks are excluded from the list</string>
+    <!--End Stats Items Strings-->
+
+    <!--Bar Chart Strings-->
+    <string name="btn_chart_prev">Previous</string>
+    <string name="btn_chart_next">Next</string>
+    <!--End Bar Chart Strings-->
+
+    <!--Reset Stats Dialog Strings-->
+    <string name="reset_dialog_title">Reset Statistics Data</string>
+    <string name="reset_dialog_message">This will reset %s stats data and you will lose your progress!</string>
+    <string name="reset_dialog_action_reset">Reset</string>
+    <string name="reset_dialog_action_dismiss">Cancel</string>
+    <!--End Reset Stats Dialog Strings-->
+
+    <!--Duplicate items dialog Strings-->
+    <string name="duplicate_dialog_title">Duplicate Tasks</string>
+    <string name="duplicate_dialog_message">This will duplicate %d selected task%s!</string>
+    <string name="duplicate_dialog_action_cancel">Cancel</string>
+    <string name="duplicate_dialog_action_duplicate">Duplicate</string>
+    <!--End Duplicate items dialog Strings-->
+
+    <!--Delete Selection Dialog Strings-->
+    <string name="del_sel_dialog_title">Delete Tasks</string>
+    <string name="del_sel_dialog_message">This will delete %d selected task%s!</string>
+    <string name="del_sel_dialog_action_cancel">Cancel</string>
+    <string name="del_sel_dialog_action_delete">Delete</string>
+    <!--End Delete Selection Dialog Strings-->
+
+    <!--Delete task Dialog Strings-->
+    <string name="task_del_dialog_title">Delete Task</string>
+    <string name="task_del_dialog_message">Delete this task? This action cannot be undone!</string>
+    <string name="task_del_dialog_action_cancel">Cancel</string>
+    <string name="task_del_dialog_action_delete">Delete</string>
+    <!--End Delete task Dialog Strings-->
+
+    <!--Save Confirmation Dialog Strings-->
+    <string name="save_confirm_dialog_title">Save Changes</string>
+    <string name="save_confirm_dialog_message">Do you want to save changes to the task?</string>
+    <string name="save_confirm_dialog_action_save">Save</string>
+    <string name="save_confirm_dialog_action_discard">Discard</string>
+
+    <!--Overriding CrashBottomSheet Strings-->
+    <!--Top title of BottomSheet which defaults to app name-->
+    <string name="cbs_title">Oops!</string>
+    <!--Bottom description of BottomSheet-->
+    <string name="cbs_description">Routine Task has crashed!\nPlease report this crash immediately to help developers fix it.</string>
+    <!--Label for the Positive Button-->
+    <string name="cbs_btn_positive">Report</string>
+    <!--Label for the Negative Button-->
+    <string name="cbs_btn_negative">Do Nothing</string>
+    <!--Developer Email to set in email app. DO NOT FORGET TO SET IT IF YOU USE DEFAULT EMAIL REPORT ACTION-->
+    <string name="cbs_report_email_to">cod3rboy@hotmail.com</string>
+    <!--Subject for the email report-->
+    <string name="cbs_report_email_subject">Routine Task - Crash Report</string>
+    <!--Toast message string if no email app is installed on device-->
+    <string name="cbs_toast_no_email_app">No email app is installed on this device.</string>
+    <!--End Overriding CrashBottomSheet Strings-->
+
+    <!--Today tasks widget Strings-->
+    <string name="widget_today_title">What\'s Today</string>
+    <string name="widget_no_today_task">No Task No Worries</string>
+    <string name="widget_check_content_desc">Check task as completed</string>
+    <string name="widget_uncheck_content_desc">Uncheck task completed</string>
+    <!--End Today tasks widget Strings-->
+
+</resources>

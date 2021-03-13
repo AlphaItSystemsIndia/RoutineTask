@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/task_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="3dp"
+    android:background="@drawable/ripple_task_item"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/first_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:id="@+id/item_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:contentDescription="@string/list_icon_desc"
+            android:src="@drawable/ic_flag"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/text_view_title" />
+
+        <TextView
+            android:id="@+id/text_view_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/item_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/text_view_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/text_view_title"
+            app:layout_constraintStart_toStartOf="@id/text_view_title"
+            app:layout_constraintTop_toBottomOf="@id/text_view_title"
+            tools:text="This is a description of the text of the above title. This is another line to make description long enough." />
+
+        <LinearLayout
+            android:id="@+id/reminder_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/text_view_title"
+            app:layout_constraintTop_toBottomOf="@id/text_view_desc">
+
+            <TextView
+                android:id="@+id/text_view_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_round_time"
+                android:drawableStart="@drawable/ic_access_time_black_24dp"
+                android:drawablePadding="2dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textSize="@dimen/tag_text_size"
+                tools:text="@string/no_reminder" />
+
+            <TextView
+                android:id="@+id/text_view_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_round_time"
+                android:drawableStart="@drawable/ic_duration"
+                android:drawablePadding="2dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textSize="@dimen/tag_text_size"
+                tools:text="2h 3m" />
+        </LinearLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/day_tag_box"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:flexDirection="row"
+            app:flexWrap="wrap"
+            app:layout_constraintEnd_toEndOf="@id/text_view_title"
+            app:layout_constraintStart_toStartOf="@id/text_view_title"
+            app:layout_constraintTop_toBottomOf="@id/reminder_view">
+
+            <TextView
+                android:id="@+id/tag_no_repeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="@string/tag_one_time"
+                android:textAllCaps="true"
+                android:theme="@style/WeekdayTag"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tag_mon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="@string/tag_monday"
+                android:theme="@style/WeekdayTag"
+                app:layout_order="2" />
+
+            <TextView
+                android:id="@+id/tag_tue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="@string/tag_tuesday"
+                android:theme="@style/WeekdayTag"
+                app:layout_order="2" />
+
+            <TextView
+                android:id="@+id/tag_wed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="@string/tag_wednesday"
+                android:theme="@style/WeekdayTag"
+                app:layout_order="2" />
+
+            <TextView
+                android:id="@+id/tag_thu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="@string/tag_thursday"
+                android:theme="@style/WeekdayTag"
+                app:layout_order="2" />
+
+            <TextView
+                android:id="@+id/tag_fri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="@string/tag_friday"
+                android:theme="@style/WeekdayTag"
+                app:layout_order="2" />
+
+            <TextView
+                android:id="@+id/tag_sat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="@string/tag_saturday"
+                android:theme="@style/WeekdayTag"
+                app:layout_order="2" />
+
+            <TextView
+                android:id="@+id/tag_sun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:text="@string/tag_sunday"
+                android:theme="@style/WeekdayTag"
+                app:layout_order="2" />
+        </com.google.android.flexbox.FlexboxLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

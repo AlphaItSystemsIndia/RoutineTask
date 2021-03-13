@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_weekday_start_entries">
+        <item>@string/settings_first_weekday_entry_sunday</item>
+        <item>@string/settings_first_weekday_entry_monday</item>
+    </string-array>
+    <integer-array name="array_weekday_start_values">
+        <item>@string/settings_first_weekday_value_sunday</item>
+        <item>@string/settings_first_weekday_value_monday</item>
+    </integer-array>
+    <string-array name="array_time_format_entries">
+        <item>@string/settings_time_format_entry_12</item>
+        <item>@string/settings_time_format_entry_24</item>
+    </string-array>
+    <string-array name="array_time_format_values">
+        <item>@string/settings_time_format_value_12</item>
+        <item>@string/settings_time_format_value_24</item>
+    </string-array>
+</resources>

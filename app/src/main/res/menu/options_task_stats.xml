@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_random_stats_task"
+        android:icon="@drawable/ic_random"
+        android:title="@string/title_option_random_stats_task"
+        android:tooltipText="@string/tooltip_option_random_stats_task"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_stats_reset"
+        android:icon="@drawable/ic_stats_reset"
+        android:title="@string/title_option_reset_stats_tasks"
+        android:tooltipText="@string/tooltip_option_stats_reset_task"
+        app:showAsAction="ifRoom" />
+</menu>
